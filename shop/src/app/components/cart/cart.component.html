@@ -1,0 +1,9 @@
+<ul>
+  <!-- {{ cart }} -->
+  <ng-container *ngFor="let item of cart; let i = index">
+    <li *ngIf="item">
+      <button (click)="remove(i)">X</button>
+      {{ products[i].title }} x{{ item }}, cost {{ products[i].price * item }}
+    </li>
+  </ng-container>
+</ul>

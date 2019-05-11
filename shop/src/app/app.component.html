@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2>Shop</h2>
+<app-shop [products]="products" [cart]="cart" (save)="save($event)"></app-shop>
+
+<h2>Cart</h2>
+<app-cart [products]="products" [cart]="cart" (save)="save($event)"></app-cart>
+
+<router-outlet></router-outlet>

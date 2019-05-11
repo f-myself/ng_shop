@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let prod of products; let i = index">
+    <button (click)="add(i)">Add</button>
+    {{ prod.title }}, ${{ prod.price }}
+  </li>
+</ul>
